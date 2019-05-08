@@ -28,5 +28,32 @@ Finally run:
 `$ lektor server` to run a local continuous builder
 `$ lektor build -O <folder>` to just build the website once.
 
+## How to develop on the website
 
+Content for the website is organized in the folder [content](https://dip.torproject.org/web/tpo/tree/master/content). The file responsible for content is always callend `contents.lr`.
+Some of these files do not have a body because the styling of the page required us to add some content to the template itself.
+
+All the templates are located in the folder [templates}(https://dip.torproject.org/web/tpo/tree/master/templates).
+
+All the templates are built starting from [layout.html](https://dip.torproject.org/web/tpo/tree/master/templates/layout.html). 
+
+Within the templates folder there is a folder called [macros](https://dip.torproject.org/web/tpo/tree/master/templates/macros). Macros are block of code that can be called from within a template:
+`
+<div class="row">
+    <h2 class="text-primary">Windows Expert Bundle</h2>
+    {% set t = bag('versions', 'torbrowser-stable') %}
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>Windows 10, 8, 7, Vista, XP, 2000, 2003 Server, ME, and Windows 98SE</td>
+          <td>Contains just Tor and nothing else.</td>
+          <td class="text-right">
+            {% from "macros/downloads.html" import render_windows_expert %}
+            {{ render_windows_expert(t.version, t.win32) }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+`
 
