@@ -31,14 +31,17 @@ Finally run:
 ## How to develop on the website
 
 Content for the website is organized in the folder [content](https://dip.torproject.org/web/tpo/tree/master/content). The file responsible for content is always callend `contents.lr`.
-Some of these files do not have a body because the styling of the page required us to add some content to the template itself.
+
+Also the `contents.lr` implements the filed specified in the model. Model are defined in the folder [models](https://dip.torproject.org/web/tpo/tree/master/models) and are used to specified fields used within the page.
+
+Some of these `contents.lr` files do not have a body because the styling of the page required us to add some content to the template itself.
 
 All the templates are located in the folder [templates}(https://dip.torproject.org/web/tpo/tree/master/templates).
 
 All the templates are built starting from [layout.html](https://dip.torproject.org/web/tpo/tree/master/templates/layout.html). 
 
 Within the templates folder there is a folder called [macros](https://dip.torproject.org/web/tpo/tree/master/templates/macros). Macros are block of code that can be called from within a template:
-`
+```
 <div class="row">
     <h2 class="text-primary">Windows Expert Bundle</h2>
     {% set t = bag('versions', 'torbrowser-stable') %}
@@ -55,5 +58,8 @@ Within the templates folder there is a folder called [macros](https://dip.torpro
       </tbody>
     </table>
   </div>
-`
+```
+
+Finally 
+
 
