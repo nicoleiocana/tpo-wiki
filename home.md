@@ -60,6 +60,46 @@ Within the templates folder there is a folder called [macros](https://dip.torpro
   </div>
 ```
 
-Finally 
+Finally recursive type of data are defined with databags.
+These live in the folder [databags](https://dip.torproject.org/web/tpo/tree/master/databags).
+
+This table summarises how each databag file is used
+
+| file | function |
+| ------ | ------ |
+| about+en.ini | About page nav menu |
+| menu+en.ini | Navbar top menu |
+| alternatives.ini | Locales and styling information for each language |
+| download-alternatives-alpha.ini | Locales for the alpha version of Tor Browser |
+| download-alternatives.ini | Locales for Tor Browser |
+| versions.ini | Latest versions for all the downloads |
+| platforms.ini | Supported platforms for the desktop versions |
+| tags.ini | Content tags and styling information |
+
+## How to enable a new locale
+
+1.  Edit [https://dip.torproject.org/web/tpo/blob/master/configs/i18n.ini#L2](https://dip.torproject.org/web/tpo/blob/master/configs/i18n.ini#L2)
+```
+content = en
+translations = de,es,fr,is,it,ka,pt-BR,ru,tr,<new locale>
+i18npath = i18n
+translate_paragraphwise = False
+url_prefix = https://www.torproject.org/
+```
+2.  Add it to [https://dip.torproject.org/web/tpo/blob/master/tpo.lektorproject#L13](https://dip.torproject.org/web/tpo/blob/master/tpo.lektorproject#L13)
+```
+[alternatives.de]
+name = Deutsch (de)
+url_prefix = /de/
+locale = de
+```
+3.  Specify styling information for the new locale in [https://dip.torproject.org/web/tpo/blob/master/databags/alternatives.ini#L7](https://dip.torproject.org/web/tpo/blob/master/databags/alternatives.ini#L7)
+```
+[de]
+direction = text-left
+order = order-last
+url = /de/
+language = Deutsch (de)
+```
 
 
