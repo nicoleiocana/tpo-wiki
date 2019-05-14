@@ -48,7 +48,7 @@ This table summarises how each databag file is used
 ## How to add a new sponsor
 
 1. Create a new directory for the sponsor under `content/about/sponsors/` e.g `content/about/sponsors/<SPONSOR_SHORT_NAME>`
-2. Add a new `content.lr` file to the newly created directory, use the following template
+2. Add a new `content.lr` file to the newly created directory, use the following template:
 ```
 _model: sponsor
 ---
@@ -76,7 +76,7 @@ description:
 
 1. Create a new directory for the person under `content/about/people/` e.g `content/about/people/<NICKNAME>`
 
-2. Add a new `content.lr` file to the newly created directory, use the following template
+2. Add a new `content.lr` file to the newly created directory, use the following template:
 
 ```
 _model: person
@@ -102,6 +102,8 @@ description:
 <DESCRIPTION>
 
 ```
+3. Add a person image (if the person want to use an image) under `assets/static/images/people/<NICKNAME>.png`
+4. Add a person gpg/pgp key (if the person want to use a txt key instead of a link) under `assets/static/keys/<NICKNAME>.txt`
 
 ## How to add a new release
 
