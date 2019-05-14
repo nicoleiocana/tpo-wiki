@@ -133,3 +133,6 @@ description:
 
 TBD
 
+## How to add a new release
+
+TBD
