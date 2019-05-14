@@ -16,3 +16,5 @@ The following excerpt was taken from [Lektor Documentation](https://www.getlekto
 Why go static? Because the vast, vast majority of websites will be read many more times than they will be updated. This is crucial because dynamic content does not come for free. It needs server resources and because program code is running there it needs to be kept up to date for to ensure there are no security problems that are left unpatched. Also when a website gets a sudden spike of traffic a static website will stay up for longer on the same server than a dynamic one that needs to execute code.
 
 Sure, there are some things you cannot do on a static website, but those are not things you would use Lektor for. For small dynamic sections, JavaScript paired up with other services is a good solution.
+
+
