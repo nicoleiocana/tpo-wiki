@@ -102,4 +102,34 @@ url = /de/
 language = Deutsch (de)
 ```
 
+## How to add a new sponsor
+
+1. Create a new directory for the sponsor under `content/about/sponsors/` e.g `content/about/sponsors/<sponsorname>`
+2. Add a new `content.lr` file to the newly created directory, use the following template
+```
+_model: sponsor
+---
+active: True
+---
+time: <YYYY>
+---
+name: <SPONSOR_NAME>
+---
+key: 16
+---
+logo: /static/images/sponsors/<IMAGE_NAME>.png
+---
+_hidden: yes
+---
+link: <SPONSOR_URL>
+---
+description:
+
+<SPONSOR_DESCRIPTION>
+```
+3. Add a logo image for the sponsor under `assets/static/images/sponsors/<sponsorname>.png`
+
+## How to add a new Tor person
+
+TBD
 
