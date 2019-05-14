@@ -74,7 +74,34 @@ description:
 
 ## How to add a new Tor person
 
-TBD
+1. Create a new directory for the person under `content/about/people/` e.g `content/about/people/<NICKNAME>`
+
+2. Add a new `content.lr` file to the newly created directory, use the following template
+
+```
+_model: person
+---
+_hidden: yes
+---
+role: core (use "board" for a board person - board people also have a "title" field)
+---
+name: <PERSON FULL NAME>
+---
+pronoun: https://pronoun.is/<PRONOUN> (optional)
+---
+twitter_handle: <TWITTER USERNAME> (optional)
+---
+nickname: <NICKNAME>
+---
+gpg: <LINK TO KEY> (This could either be a textfile under /assets/static/keys or a link)
+---
+image: <LINK TO IMG> (Optional. If a link to an image under /static/images/people/ is not provided the onion image is displayed instead)
+---
+description:
+
+<DESCRIPTION>
+
+```
 
 ## How to add a new release
 
