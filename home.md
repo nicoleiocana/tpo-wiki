@@ -1,4 +1,4 @@
-Tor Project website is hosted at several computers for redundancy, and these computers are together called "the www rotation". Please check the ​static sites help page for more info.
+Tor Project website is hosted at several computers for redundancy, and these computers are together called "the www rotation". Please check the ​[​static sites help page](https://help.torproject.org/tsa/doc/static-sites/) for more info.
 
 The current git repository for the website can be found on ​[gitweb.tpo/project/web/tpo.git](https://gitweb.torproject.org/project/web/tpo.git/).
 
