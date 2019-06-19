@@ -112,5 +112,10 @@ description:
 1. Update `content/projects/torbrowser/RecommendedTBBVersions/contents.lr`. This is file is responsible for the following page: https://www.torproject.org/projects/torbrowser/RecommendedTBBVersions/ used by Tor Browser
 2. Update `databags/versions.ini`
 
+If you want to add a new locale for Tor Browser:
+
+- For stable edit: `databags/download-alternatives.ini` 
+- For alpha edit: `databags/download-alternatives.ini`
+
 ### Tor 
 1. Update `databags/versions.ini`
