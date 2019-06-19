@@ -107,4 +107,10 @@ description:
 
 ## How to add a new release
 
-TBD
+### Tor Browser
+
+1. Update `content/projects/torbrowser/RecommendedTBBVersions/contents.lr`. This is file is responsible for the following page: https://www.torproject.org/projects/torbrowser/RecommendedTBBVersions/ used by Tor Browser
+2. Update `databags/versions.ini`
+
+### Tor 
+1. Update `databags/versions.ini`
