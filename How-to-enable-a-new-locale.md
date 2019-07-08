@@ -1,3 +1,5 @@
+For the canonical source, please see: https://gitweb.torproject.org/tor-browser-spec.git/tree/processes/ReleaseProcess#n155
+
 1.  Edit [https://dip.torproject.org/web/tpo/blob/master/configs/i18n.ini#L2](https://dip.torproject.org/web/tpo/blob/master/configs/i18n.ini#L2). Please keep alphabetic order
 ```
 content = en
