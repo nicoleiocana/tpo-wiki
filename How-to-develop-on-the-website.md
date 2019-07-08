@@ -109,6 +109,8 @@ description:
 
 ### Tor Browser
 
+For the canonical source of this document, please see: https://gitweb.torproject.org/tor-browser-spec.git/tree/processes/ReleaseProcess#n142
+
 1. Update `content/projects/torbrowser/RecommendedTBBVersions/contents.lr`. This is file is responsible for the following page: https://www.torproject.org/projects/torbrowser/RecommendedTBBVersions/ used by Tor Browser
 2. Update `databags/versions.ini`
 
