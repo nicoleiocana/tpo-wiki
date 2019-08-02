@@ -58,7 +58,7 @@ time: <YYYY>
 ---
 name: <SPONSOR_LONG_NAME>
 ---
-key: 16
+key: <ORDER_NUMBER>
 ---
 logo: /static/images/sponsors/<SPONSOR_SHORT_NAME>.png
 ---
@@ -70,6 +70,9 @@ description:
 
 <SPONSOR_DESCRIPTION>
 ```
+
+Where <ORDER_NUMBER> is the next available key, i.e look at the key value for the last sponsor added and increment that by one. 
+
 3. Add a logo image for the sponsor under `assets/static/images/sponsors/<SPONSOR_SHORT_NAME>.png`
 
 ## How to add a new Tor person
