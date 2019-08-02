@@ -75,6 +75,13 @@ Where <ORDER_NUMBER> is the next available key, i.e look at the key value for th
 
 3. Add a logo image for the sponsor under `assets/static/images/sponsors/<SPONSOR_SHORT_NAME>.png`
 
+### How to remove a Current Sponsor
+
+Once a sponsor is no longer funding us, they need to be moved to the "Past Sponsors" list
+
+1. Open up the sponsor contents file e.g `content/about/sponsors/<SPONSOR_SHORT_NAME>`
+2. Edit the value for the `active` field from `True` to `False`
+
 ## How to add a new Tor person
 
 1. Create a new directory for the person under `content/about/people/` e.g `content/about/people/<NICKNAME>`
