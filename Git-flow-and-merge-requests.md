@@ -12,8 +12,11 @@ It is recommended that you clone from tor git even if you want to create a repos
 
 To clone a tor git repository in dip:
 
-1.  
+1.  Go to your projects dashboard: [https://dip.torproject.org/dashboard/projects](https://dip.torproject.org/dashboard/projects) 
 
+2.  Click on the + icon next to the search box. And on "New Project"
+
+![newproject](uploads/d0bda1942a3879283d0eceaf921dd19e/newproject.png)
 
 ## How to merge from a third party branch/repository.
 
