@@ -10,7 +10,9 @@ Instead of a single *master* branch, this workflow uses **two** branches to reco
 
 It is recommended that you clone from tor git even if you want to create a repository under your user space in dip.
 
-### How to clone a tor git repository in dip:
+### How to clone a tor git repository in dip
+
+The following instructions are meant for users that want to use dip web interface and are not familiar with git. If you are proficient with git move along, nothing to see here for you ;)
 
 1.  Go to your projects dashboard: [https://dip.torproject.org/dashboard/projects](https://dip.torproject.org/dashboard/projects) 
 
