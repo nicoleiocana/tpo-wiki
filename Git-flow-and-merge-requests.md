@@ -18,5 +18,13 @@ To clone a tor git repository in dip:
 
 ![newproject](uploads/d0bda1942a3879283d0eceaf921dd19e/newproject.png)
 
+3.  Got to the project you want to clone on tor git and select the clone link
+
+![tor-git](uploads/e148061d70aa8c8d98ab0674d9442c0d/tor-git.png)
+
+4. Use the link to clone the repository in dip by clicking on "Import Project" in the new project page
+
+![import-project](uploads/36cef13e2cd46de3020165892d370863/import-project.png)
+
 ## How to merge from a third party branch/repository.
 
