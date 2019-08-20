@@ -10,7 +10,7 @@ Instead of a single *master* branch, this workflow uses **two** branches to reco
 
 It is recommended that you clone from tor git even if you want to create a repository under your user space in dip.
 
-To clone a tor git repository in dip:
+### How to clone a tor git repository in dip:
 
 1.  Go to your projects dashboard: [https://dip.torproject.org/dashboard/projects](https://dip.torproject.org/dashboard/projects) 
 
@@ -22,9 +22,25 @@ To clone a tor git repository in dip:
 
 ![tor-git](uploads/e148061d70aa8c8d98ab0674d9442c0d/tor-git.png)
 
-4. Use the link to clone the repository in dip by clicking on "Import Project" in the new project page
+4.  Use the link to clone the repository in dip by clicking on "Import Project" in the new project page
 
 ![import-project](uploads/36cef13e2cd46de3020165892d370863/import-project.png)
+
+5.  Finally click on "Create Project"
+
+### How to create a merge request in dip
+
+So you have some changes ready to merge. Here is how you create a merge request.
+
+1.  Go to your project merge requests page: https://dip.torproject.org/<username>/<project>/merge_requests
+
+2.  Click on New merge request
+
+3.  Select the source branch and change the target branch to use the upstream project in dip:
+
+![merge-request](uploads/b714ef24d16a9a2305bda2a1dbc66707/merge-request.png)
+
+4.  Click on "Compare branches and continue" 
 
 ## How to merge from a third party branch/repository.
 
