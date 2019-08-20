@@ -10,6 +10,8 @@ Instead of a single *master* branch, this workflow uses **two** branches to reco
 
 It is recommended that you clone from tor git even if you want to create a repository under your user space in dip.
 
+2.  Create a new branch for the changes you want to make and start editing the files you want. Gitlab will suggest to create a merge request. You can share the merge request link with the others developers to have the change merged.
+
 ### How to clone a tor git repository in dip
 
 The following instructions are meant for users that want to use dip web interface and are not familiar with git. If you are proficient with git move along, nothing to see here for you ;)
