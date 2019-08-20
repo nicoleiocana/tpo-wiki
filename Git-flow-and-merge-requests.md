@@ -44,7 +44,7 @@ git branch -d new-feature
 
 When you are merging from a branch or third party repository make sure to edit the commit message in a way that other contributors now what you are doing.
 
-If you wanted to be nicer you could also simply merge commits from the branch so that you keep the commit messages of the initial contributor.
+If you wanted to be nicer you could also simply merge commits from the branch so that you keep the commit messages of the initial contributor. [See doc about cherry-picking](https://git-scm.com/docs/git-cherry-pick)
 
 If you update from master it's better to use:
 ` git pull --rebase origin master `
