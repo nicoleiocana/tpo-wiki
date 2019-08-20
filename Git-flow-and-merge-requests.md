@@ -14,9 +14,37 @@ It is recommended that you clone from tor git even if you want to create a repos
 
 If you are not used to work with git, you can edit our websites content via dip (gitlab) directly. Here is a doc on how to use dip without getting involved with git: [https://dip.torproject.org/web/tpo/wikis/Use-dip-to-edit-websites](https://dip.torproject.org/web/tpo/wikis/Use-dip-to-edit-websites)
 
+## How to use our git flow
+
+Consider a fast-forward git approach:
+
+```
+# Start a new feature
+git checkout -b new-feature master
+# Edit some files
+git add <file>
+git commit -m "Start a feature"
+# Edit some files
+git add <file>
+git commit -m "Finish a feature"
+```
+
+You work on your local branch your new feature. You send a merge request to the main repository.
+
+If your merge is accepted and you have push right to the project repository:
+
+```
+# Merge in the new-feature branch
+git checkout master
+git merge new-feature
+git branch -d new-feature
+```
+
 ## How to merge from a branch or third party repository.
 
 When you are merging from a branch or third party repository make sure to edit the commit message in a way that other contributors now what you are doing.
 
 If you wanted to be nicer you could also simply merge commits from the branch so that you keep the commit messages of the initial contributor.
 
+If you update from master it's better to use:
+` git pull --rebase origin master `
