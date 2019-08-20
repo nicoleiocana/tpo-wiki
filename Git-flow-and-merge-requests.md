@@ -10,6 +10,9 @@ Instead of a single *master* branch, this workflow uses **two** branches to reco
 
 It is recommended that you clone from tor git even if you want to create a repository under your user space in dip.
 
+To clone a tor git repository in dip:
+
+1.  
 
 
 ## How to merge from a third party branch/repository.
