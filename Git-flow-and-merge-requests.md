@@ -42,5 +42,9 @@ So you have some changes ready to merge. Here is how you create a merge request.
 
 4.  Click on "Compare branches and continue" 
 
-## How to merge from a third party branch/repository.
+## How to merge from a branch or third party repository.
+
+When you are merging from a branch or third party repository make sure to edit the commit message in a way that other contributors now what you are doing.
+
+If you wanted to be nicer you could also simply merge commits from the branch so that you keep the commit messages of the initial contributor.
 
