@@ -9,3 +9,11 @@ Tip: To save some time while you build in local, you can edit the [configs/i18n.
 Finally run:
 `$ lektor server` to run a local continuous builder
 `$ lektor build -O <folder>` to just build the website once.
+
+# Most common lektor errors
+
+#### FileNotFoundError:
+    file = builtins.open(filename, mode, buffering) 
+    FileNotFoundError: [Errno 2] No such file or directory: '/content/**some filename**/contents.lr'
+
+This happens when a source file `contents.lr` has been deleted in the repository, but their associated language files are still there. So, when trying to update the language files, lektor fails because the source file is not there. Delete the folder with the translations and build again. 
