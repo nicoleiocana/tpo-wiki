@@ -1,15 +1,19 @@
-* Download Lektor: [​https://www.getlektor.com/downloads/](​https://www.getlektor.com/downloads/)
+* Download & install Lektor: [​https://www.getlektor.com/downloads/](​https://www.getlektor.com/downloads/)
 * Clone the repo from torgit (this is a read only repository): ​[https://git.torproject.org/project/web/tpo.git](https://git.torproject.org/project/web/tpo.git)
-* Init the building blocks submodule: `$ cd tpo/lego && git submodule update --init`
+* Initialize the building blocks submodule: `$ cd tpo/lego && git submodule update --init`
 
 Translations for the website are imported by Jenkins when bulding the page, but if you want to test them, download the [correct branch](https://gitweb.torproject.org/translation.git/log/?h=tpo-web) of the translations repo to the ./i18n/ folder.
 
-**Tip**: To save some time while you build in local, you can edit the [configs/i18n.ini](https://gitweb.torproject.org/project/web/tpo.git/tree/configs/i18n.ini) file and take some languages out of the 'translations' option.
+> **Tip**: To save some time while you build in local, you can edit the [configs/i18n.ini](https://gitweb.torproject.org/project/web/tpo.git/tree/configs/i18n.ini) file and take some languages out of the 'translations' option.
+
+You can make changes to the pages. Most of the content is on the `content/` folder.
 
 Finally run:
 
 * `$ lektor server` to run a local continuous builder
 * `$ lektor build -O <folder>` to just build the website once.
+
+You should be able to access your local lektor instance at [http://127.0.0.1:5000/](http://127.0.0.1:5000/) from your computer.
 
 # Most common lektor errors
 
