@@ -1,5 +1,7 @@
 Tor Project website is hosted at several computers for redundancy, and these computers are together called "the www rotation". Please check the ​[​static sites help page](https://help.torproject.org/tsa/doc/static-sites/) for more info.
 
+> Please use this wiki documentation as a basis for other lektor sites, as community, support, tb-manual, styleguide, template, etc. 
+
 The current git repository for the website can be found on ​[gitweb.tpo/project/web/tpo.git](https://gitweb.torproject.org/project/web/tpo.git/).
 
 The repository is built via the following ​[Jenkins build process](https://jenkins.torproject.org/job/lektor-website-tpo-translation/).
