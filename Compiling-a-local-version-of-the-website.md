@@ -4,6 +4,8 @@
 
 Translations for the website are imported by Jenkins when bulding the page, but if you want to test them, download the [correct branch](https://gitweb.torproject.org/translation.git/log/?h=tpo-web) of the translations repo to the ./i18n/ folder.
 
+Tip: To save some time while you build in local, you can edit the [configs/i18n.ini](https://gitweb.torproject.org/project/web/tpo.git/tree/configs/i18n.ini) file and take some languages out of the 'translations' option.
+
 Finally run:
 `$ lektor server` to run a local continuous builder
 `$ lektor build -O <folder>` to just build the website once.
