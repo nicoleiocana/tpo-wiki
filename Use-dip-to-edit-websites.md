@@ -32,4 +32,7 @@ So you have some changes ready to merge. Here is how you create a merge request.
 
 4.  Click on "Compare branches and continue" 
 
-Following steps can be read at: [Git flow and merge requests](Git-flow-and-merge-requests)
+5. Update the title to reflect what the change is, e.g reviewing localization section home page
+Update the description to give more details about the change, e.g Reviewed copy. Fixed grammar and spelling. Page is ready for translation
+
+6. Submit Merge Request
