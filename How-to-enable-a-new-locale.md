@@ -23,3 +23,5 @@ order = order-last
 url = /de/
 language = Deutsch (de)
 ```
+
+You can then run `lektor build` to see if there are any errors, and see the language file generated on the '/i18n' folder
