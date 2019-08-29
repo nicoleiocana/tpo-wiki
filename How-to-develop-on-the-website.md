@@ -1,3 +1,4 @@
+To follow this documentation you need to set up a [local copy of the website](Compiling-a-local-version-of-the-website)
 Content for the website is organized in the folder [content](https://dip.torproject.org/web/tpo/tree/master/content). The file responsible for content is always callend `contents.lr`.
 
 Also the `contents.lr` implements the filed specified in the model. Model are defined in the folder [models](https://dip.torproject.org/web/tpo/tree/master/models) and are used to specified fields used within the page.
