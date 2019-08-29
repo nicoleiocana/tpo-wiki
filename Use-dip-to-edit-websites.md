@@ -31,3 +31,5 @@ So you have some changes ready to merge. Here is how you create a merge request.
 ![merge-request](uploads/b714ef24d16a9a2305bda2a1dbc66707/merge-request.png)
 
 4.  Click on "Compare branches and continue" 
+
+Following steps can be read at: [Git flow and merge requests](Git-flow-and-merge-requests)
