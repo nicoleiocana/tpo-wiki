@@ -8,7 +8,7 @@ The following instructions are meant for users that want to use dip web interfac
 
 ![newproject](uploads/d0bda1942a3879283d0eceaf921dd19e/newproject.png)
 
-3.  Got to the project you want to clone on tor git and select the clone link
+3.  Got to the project you want to clone on [tor git](https://gitweb.torproject.org/) and select the clone link
 
 ![tor-git](uploads/e148061d70aa8c8d98ab0674d9442c0d/tor-git.png)
 
