@@ -22,3 +22,8 @@ You should be able to access your local lektor instance at [http://127.0.0.1:500
     FileNotFoundError: [Errno 2] No such file or directory: '/content/**some filename**/contents.lr'
 
 This happens when a source file `contents.lr` has been deleted in the repository, but their associated language files are still there. So, when trying to update the language files, lektor fails because the source file is not there. Delete the folder with the translations and build again. 
+
+##### Update lego
+/training/code-of-conduct/index.html (jinja2.exceptions.UndefinedError: 'render_text' is undefined)
+
+fixed with `git submodule update --init --recursive`
