@@ -15,8 +15,8 @@ You can follow the process outlined in [Git flow and merge requests](Git-flow-an
 
 ## Reviewer Workflow
 
-1. Review the page on lektor-staging
-2. Review the content on your repo's develop branch and use the gitlab edit button to make any changes.
+1. Review the page on lektor-staging, e.g https://lektor-staging.torproject.org/community/develop/
+2. Review the content on **your repo's** develop branch and use the gitlab edit button to make any changes, e.g `https://dip.torproject.org/<your-gitlab-user>/community/blob/develop/content/onion-services/contents.lr` 
 3. When you are happy with your changes:
     - Update the "Commit message" to explain why you have made your changes
     - Update the "Target Branch"
