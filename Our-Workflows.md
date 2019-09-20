@@ -1,18 +1,19 @@
 ## Tor Internal Workflow
 
-This is the workflow that Tor Internal people should use when making changes on the Community Portal:
+This is the workflow that Tor Internal people should use when making changes to the Websites:
 
-1. When starting work on an issue or content, please assign the issue to yourself and move into the `Doing` column on the [Community Portal Project Board](https://dip.torproject.org/web/community/-/boards). You can follow the process outlined in ["How to send a merge request or propose a change"](https://dip.torproject.org/web/tpo/wikis/Git-flow-and-merge-requests#how-to-send-a-merge-request-or-propose-a-change) to work on your changes.
-2. To view your changes on the website, you can [run lektor locally](https://dip.torproject.org/web/tpo/wikis/Compiling-a-local-version-of-the-website)
-3. Once you are happy with your work, push your changes to `develop` branch and move to `needs-review` column on the [Community Portal Project Board](https://dip.torproject.org/web/community/-/boards)
+1. When starting work on an issue or content, please assign the issue to yourself and move into the `Doing` column on the relevant Project Board.
+You can follow the process outlined in [Git flow and merge requests](Git-flow-and-merge-requests#how-to-send-a-merge-request-or-propose-a-change) to work on your changes.
+2. To view your changes on the website, you can follow the instructions for [Compiling a local version of the website](Compiling-a-local-version-of-the-website).
+3. Once you are happy with your work, push your changes to `develop` branch and move to `needs-review` column on the project board.
 4. Add a comment to the issue, tagging the reviewer, e.g `@steph`, with:
     - Location of page on lektor-staging `develop` branch, e.g https://lektor-staging.torproject.org/community/develop/
     - Contents file, containing your changes where it would be located on the **reviewer's repo** e.g `https://dip.torproject.org/steph/community/blob/develop/content/onion-services/contents.lr` 
-    - For the review workflow, please see [Reviewer Worfklow](Our-Workflows#reviewer-workflow) below.
-5. Once the work has been reviewed and any necessary changes and merge request has been made, a repo maintainer or team members with write access to gitweb master will then merge or cherry-pick these changes to master, following the workflow outlined in [How to use our git flow](https://dip.torproject.org/web/tpo/wikis/Git-flow-and-merge-requests#how-to-use-our-git-flow)
+    - For the review workflow, please see the [Reviewer Workflow](Our-Workflows#reviewer-workflow) below.
+5. Once the work has been reviewed and any necessary changes and merge request has been made, a repo maintainer or team members with write access to gitweb master will then merge or cherry-pick these changes to master, following the workflow outlined in [Git flow and merge requests](Git-flow-and-merge-requests#how-to-use-our-git-flow)
 6. Merger should then move the the ticket to the `Closed` column.
 
-## Reviewer Workflow
+## Reviewer Workflow
 
 1. Review the page on lektor-staging
 2. Review the content on your repo's develop branch and use the gitlab edit button to make any changes.
