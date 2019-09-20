@@ -18,7 +18,7 @@ git commit -m "Finish a feature"
 4. Add a comment to the issue, tagging the reviewer, e.g `@steph`, with:
     - Location of page on lektor-staging `develop` branch, e.g https://lektor-staging.torproject.org/community/develop/
     - Contents file, containing your changes where it would be located on the **reviewer's repo** e.g `https://dip.torproject.org/steph/community/blob/develop/content/onion-services/contents.lr` 
-    - For the review workflow, please see (Reviewer Workflow)
+    - For the review workflow, please see [Reviewer Worfklow](Our-Workflows#reviewer-workflow) below.
 5. Once the work has been reviewed and any necessary changes and merge request has been made, a repo maintainer or team members with write access to gitweb master will then merge or cherry-pick these changes to master, following the workflow outlined in [How to use our git flow](https://dip.torproject.org/web/tpo/wikis/Git-flow-and-merge-requests#how-to-use-our-git-flow)
 6. Merger should then move the the ticket to the `Closed` column
 
