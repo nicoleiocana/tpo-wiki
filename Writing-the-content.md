@@ -4,6 +4,13 @@ When writing the content, there are some things to take into account:
 
 We work with a text format called MarkDown. You can learn about it from the link https://dip.torproject.org/help/user/markdown 
 
+**Short Sentences**
+
+Please add linebreaks to the long sentences.
+
+If you add only one linebreak, the paragraph will stay together, but the translation framework will generate two sentences.
+Long sentences are hard to translate and unlikely to be reused.
+
 **Links**
 
 Links are better done as \[linked words\](https://link), as it is easier to review them and simpler to read.
