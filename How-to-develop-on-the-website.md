@@ -6,20 +6,24 @@ Also the `contents.lr` implements the filed specified in the model. Model are de
 
 Some of these `contents.lr` files do not have a body because the styling of the page required us to add some content to the template itself.
 
+**Templates**
+
 All the templates are located in the folder [templates}(https://dip.torproject.org/web/tpo/tree/master/templates).
 
 All the templates are built starting from [layout.html](https://dip.torproject.org/web/tpo/tree/master/templates/layout.html). 
 
+For the user facing strings in the templates to be available for translation you need to enclose them like this: `{{ _('translatable strings') }}`.
+
 Within the templates folder there is a folder called [macros](https://dip.torproject.org/web/tpo/tree/master/templates/macros). Macros are block of code that can be called from within a template:
 ```
 <div class="row">
-    <h2 class="text-primary">Windows Expert Bundle</h2>
+    <h2 class="text-primary">{{ _('Windows Expert Bundle') }}</h2>
     {% set t = bag('versions', 'torbrowser-stable') %}
     <table class="table">
       <tbody>
         <tr>
-          <td>Windows 10, 8, 7, Vista, XP, 2000, 2003 Server, ME, and Windows 98SE</td>
-          <td>Contains just Tor and nothing else.</td>
+          <td>{{ _('Windows 10, 8, 7, Vista, XP, 2000, 2003 Server, ME, and Windows 98SE') }}</td>
+          <td>{{ _('Contains just Tor and nothing else.') }}</td>
           <td class="text-right">
             {% from "macros/downloads.html" import render_windows_expert %}
             {{ render_windows_expert(t.version, t.win32) }}
