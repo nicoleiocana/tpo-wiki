@@ -13,3 +13,4 @@ Once you have made your changes:
   Please don't leave it as 'Updated contents.lr' as that does not give a real idea of what you wanted to do.
   Same goes to the branches called 'patch-1'. Let yourself go! be creative!
 * Create a pull request for your contribution to be reviewed.
+* If there is a ticket, mention the pull request on the comments.
