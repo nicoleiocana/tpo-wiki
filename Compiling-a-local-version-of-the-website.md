@@ -1,8 +1,15 @@
 * Download & install Lektor: [​https://www.getlektor.com/downloads/](​https://www.getlektor.com/downloads/)
 * Clone the repo from torgit (this is a read only repository): ​[https://git.torproject.org/project/web/tpo.git](https://git.torproject.org/project/web/tpo.git)
+* Install the [dependencies for the lektor-i18n-plugin](https://github.com/numericube/lektor-i18n-plugin#prerequisites)
+* Clone the translations repository
 * Initialize the building blocks submodule: `$ cd tpo/lego && git submodule update --init`
 
-Translations for the website are imported by Jenkins when bulding the page, but if you want to test them, download the [correct branch](https://gitweb.torproject.org/translation.git/log/?h=tpo-web) of the translations repo to the ./i18n/ folder.
+Translations for the website are imported by Jenkins when bulding the page, but if you want to test them, download the [correct branch](https://gitweb.torproject.org/translation.git/log/?h=tpo-web) of the translations repo to the ./i18n/ folder:
+```
+$ git clone https://gitweb.torproject.org/translation.git i18n
+$ cd i18n
+$ git checkout tpo-web
+```
 
 > **Tip**: To save some time while you build in local, you can edit the [configs/i18n.ini](https://gitweb.torproject.org/project/web/tpo.git/tree/configs/i18n.ini) file and take some languages out of the 'translations' option.
 
