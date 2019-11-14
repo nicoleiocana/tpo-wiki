@@ -10,10 +10,12 @@ Please add linebreaks to the long sentences.
 
 If you add only one linebreak, the paragraph will stay together, but the translation framework will generate two sentences.
 Long sentences are hard to translate and unlikely to be reused.
+Please dont change the line in the middle of a sentence, as that creates bad translation files.
 
 **Links**
 
 Links are better done as \[linked words\](https://link), as it is easier to review them and simpler to read.
+**Always prefer https links when available**, to protect the privacy of our readers.
 
 **HTML**
 
