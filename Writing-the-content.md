@@ -14,8 +14,10 @@ Please dont change the line in the middle of a sentence, as that creates bad tra
 
 **Links**
 
-Links are better done as \[linked words\](https://link), as it is easier to review them and simpler to read.
-**Always prefer https links when available**, to protect the privacy of our readers.
+* Links are better done as \[linked words\](https://link), as it is easier to review them and simpler to read.
+- External links:
+  * **Always prefer https links when available**, to protect the privacy of our readers.
+  * Make sure that the link is the shortest version possible, without suffixes like: `?ftag=COS-05-10aaa0b` or other random stuff. Take everything possible out of the link and leave it to its minimal (as long as functional) expression.
 
 **HTML**
 
