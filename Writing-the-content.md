@@ -15,6 +15,8 @@ Please dont change the line in the middle of a sentence, as that creates bad tra
 **Links**
 
 * Links are better done as `[linked words](https://link)`, as it is easier to review them and simpler to read (instead of `<a href="https://link">`)
+- Always prefer internal links, for example when in the tb-manual write the link as `[linked words](/link)` and not [linked words](https://tb-manual.torproject.org/link), because the users may be browsing through our onion address or a local documentation instance.
+
 - External links:
   * **Always prefer https links when available**, to protect the privacy of our readers.
   * Make sure that the link is the shortest version possible, without suffixes like: `?ftag=COS-05-10aaa0b` or other random stuff. Take everything possible out of the link and leave it to its minimal (as long as functional) expression.
