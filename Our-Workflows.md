@@ -1,6 +1,13 @@
-## Tor Internal Workflow
+This is a tentative workflow that people should use when contributing to www sites.
+Some specific websites might have specific rules, but all follow these general guidelines.
 
-This is the workflow that Tor Internal people should use when making changes to the Websites:
+If you are a recurring contributor, you should follow the [Gitlab workflow](#gitlab-workflow).
+If you are just starting to contribute, you should follow the [Github workflow](#github-workflow). If you have been a contributor for a while, we should make you a gitlab account. So please reach out and we can help you with that.
+
+
+## Gitlab Workflow
+
+This is the workflow that recurring contributors to the websites with a dip.torproject.org account should use when making changes to the Websites:
 
 1. When starting work on an issue or content, please assign the issue to yourself and move into the `Doing` column on the relevant Project Board.
 You can follow the process outlined in [Git flow and merge requests](Git-flow-and-merge-requests#how-to-send-a-merge-request-or-propose-a-change) to work on your changes.
@@ -13,9 +20,30 @@ You can follow the process outlined in [Git flow and merge requests](Git-flow-an
 5. Once the work has been reviewed and any necessary changes and merge request has been made, a repo maintainer or team members with write access to gitweb master will then merge or cherry-pick these changes to master, following the workflow outlined in [Git flow and merge requests](Git-flow-and-merge-requests#how-to-use-our-git-flow)
 6. Merger should then move the the ticket to the `Closed` column.
 
+
+## Github Workflow
+
+This is the workflow that people without a dip account should use when making changes on the various torproject.org websites.
+
+If you are comfortable using gitlab we have setup [github mirrors](https://github.com/orgs/torproject/teams/web/repositories) for all our websites.
+
+If you want to contribute to a specific issue, you can comment on the issue itself or contact one of the WWW contributors. Once you have a Pull Request ready to merge you should:
+
+0. Ideally try to run it locally and check that nothing breaks and everything still behaves as before. If you need help with running Lektor or building the website locally please reach out.
+1. Make a PR via github or any other git service and comment on the issue mentioning the PR link. If you want you can also reach out to the team on #tor-www IRC channel to let us know.
+
+At this point, one of us on the website team will aim to review your PR.
+When we review a PR we make sure that the text it's accurate and there are no spelling errors or grammar mistakes. Then if:
+
+  - There are any front end and/or template changes involved, the changes will be pushed to our `develop` branch for functionality review
+  - There are any fixes necessary, we will ask for changes to be made.
+
+Once it all looks good and behaves correctly, we will merge your request to the master branch of the community portal [canonical repo](https://gitweb.torproject.org/project/web/community.git/) on [gitweb](https://gitweb.torproject.org/) master. 
+
+
 ## Reviewer Workflow
 
-1. Review the page on lektor-staging, e.g https://lektor-staging.torproject.org/community/develop/
+1. Review the page on lektor-staging, e.g https://lektor-staging.torproject.org/community/staging/
 2. Review the content on **your repo's** develop branch and use the gitlab edit button to make any changes, e.g `https://dip.torproject.org/<your-gitlab-user>/community/blob/develop/content/onion-services/contents.lr` 
 3. When you are happy with your changes:
     - Update the "Commit message" to explain why you have made your changes
@@ -29,19 +57,3 @@ You can follow the process outlined in [Git flow and merge requests](Git-flow-an
     - Click "Submit merge request"
 5. Reviewer should comment on the original issue with a link to the merge request created, e.g `https://dip.torproject.org/steph/community/merge_requests/2`
 
-## Volunteer Workflow
-
-This is the workflow that external volunteers should use when making changes on the Community Portal:
-
-We recommend that you use our [github mirror](https://github.com/torproject/community) to submit PRs and contributions to our Community repo. Once you have a PR ready you should:
-
-0. Ideally try to run it locally and check that nothing breaks and everything still behaves as before
-1. Make a PR and ping the team on #tor-www IRC channel to let us know there's a PR waiting for review
-
-At this point, one of us on the website team will aim to review your PR within 24h during the week (this may take longer on the weekends). Review will involve:
-
-  - Reading the text to make sure it's accurate and there are no spelling errors or grammar mistakes
-  - If there are any front end and/or template changes involved, the changes will be pushed to our `develop` branch for functionality review
-  - If there are any fixes necessary, we will ask for changes to be made.
-
-Once it all looks good and behaves correctly, we will merge your request to the master branch of the community portal [canonical repo](https://gitweb.torproject.org/project/web/community.git/) on [gitweb](https://gitweb.torproject.org/) master. 
