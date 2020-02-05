@@ -51,8 +51,10 @@ This table summarises how each databag file is used
 
 | file | function |
 | ------ | ------ |
-| about+en.ini | About page nav menu |
-| menu+en.ini | Navbar top menu |
+| about.ini | About page nav menu |
+| menu.ini | Navbar top menu |
+| menu_footer.ini | Footer menu |
+| links.ini | External links in their respective locale |
 | alternatives.ini | Locales and styling information for each language |
 | download-alternatives-alpha.ini | Locales for the alpha version of Tor Browser |
 | download-alternatives.ini | Locales for Tor Browser |
