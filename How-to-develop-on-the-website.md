@@ -1,8 +1,18 @@
-> To follow this documentation it will be nice to set up a [local copy of the website](Compiling-a-local-version-of-the-website).
+> To follow this documentation it will be nice to set up a [local copy of the website](Compiling-a-local-version-of-the-website) first.
+
+Each website can be a little different but there are a few rules that are standard. Some of these rules are imposed by the static website generator that we use (Lektor). Other rules are made up by the www team to make development easier.
+
+**Lego**
+
+Each website repository has a [submodule](https://dip.torproject.org/torproject/web/lego/) called lego. This repository contains commont elements to all the websites. 
+To update the submodule, please run: `$ git submodule update --remote`
+Lego is imported in the main repository and the single files are sym-linked to their relative folders. Ex: [header template](https://dip.torproject.org/torproject/web/tpo/blob/master/templates/header.html) in torproject.orgg main website.
+
+**Content**
 
 Content for the website is organized in the folder [content](https://dip.torproject.org/web/tpo/tree/master/content). The file responsible for content is always callend `contents.lr`.
 
-Also the `contents.lr` implements the filed specified in the model. Model are defined in the folder [models](https://dip.torproject.org/web/tpo/tree/master/models) and are used to specified fields used within the page.
+Also the `contents.lr` implements the fields specified in the model. Models are defined in the folder [models](https://dip.torproject.org/web/tpo/tree/master/models).
 
 Some of these `contents.lr` files do not have a body because the styling of the page required us to add some content to the template itself.
 
