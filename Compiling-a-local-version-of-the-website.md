@@ -1,8 +1,8 @@
 All the lektor-based websites work the same, although they have different repositories. This howto was written with the main website repository address,  https://git.torproject.org/project/web/tpo.git`, but it can also work for:
 
-*  Tor Browser Manual:  https://git.torproject.org/project/web/manual.git`
-*  Support Portal:  https://git.torproject.org/project/web/support.git`
-*  Community portal:  https://git.torproject.org/project/web/community.git`
+*  Tor Browser Manual:  `https://git.torproject.org/project/web/manual.git`
+*  Support Portal:  `https://git.torproject.org/project/web/support.git`
+*  Community portal:  `https://git.torproject.org/project/web/community.git`
 
 ### **1. Download & install Lektor**
 
@@ -22,13 +22,14 @@ $ sudo apt-get install gettext python3-babel
 $ pip install babel
 ```
 ### **4. Clone the translations repository**
-Translations for the website are imported by Jenkins when building the page, but if you want to test them, download the [correct branch](https://gitweb.torproject.org/translation.git/log/?h=tpo-web) of the translations repo to the ./i18n/ folder:
+Translations for the website are imported by Jenkins when building the page, but if you want to test them, download the correct branch of the translations repo to the ./i18n/ folder:
 
 ```
 $ git clone https://git.torproject.org/translation.git i18n
 $ cd i18n
 $ git checkout tpo-web
 ```
+> For the other websites, the branches are: `tbmanual-contentspot`, `support-portal`, `communitytpo-contentspot` 
 
 ### **5. Initialize the building blocks submodule**
 `$ cd tpo/lego && git submodule update --init`
@@ -45,7 +46,8 @@ The translation mechanism is hooked into the build system. So translating a webs
 
 You can make changes to the pages. Most of [the content is on the `content/` folder](https://dip.torproject.org/torproject/web/tpo/wikis/Writing-the-content).
 
-**Troubleshoots**
+**Troubleshooting**
+
 * If you encounter the error: `from urllib import requestImportError: cannot import name request`, you can fix it by going to `~tpo/lego/packages/xml-to-html/lektor_xml_to_html.py` and changing the line `from urllib import request` to `from urllib3 import request`. You may also have to do the same change for the `~tpo/lego/packages/txt-to-html/lektor_txt_to_html.py` file.
 
 * A possible error is `UnicodeEncodeError: 'ascii' codec can't encode character u'\xae'` stemming from `~tpo/lego/packages/i18n/lektor_i18n.py`. This can be fixed by adding the following code snippet to the top of the page after the `import sys` phrase:
