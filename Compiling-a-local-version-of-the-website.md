@@ -74,4 +74,8 @@ This happens when a source file `contents.lr` has been deleted in the repository
 
 fixed with `git submodule update --init --recursive`
 
+##### SyntaxError
+except IOError, e: SyntaxError: invalid syntax
+
+This can be the python version. Try it with Python 2.7 to 3.7
 
