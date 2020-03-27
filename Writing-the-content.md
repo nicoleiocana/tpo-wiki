@@ -10,7 +10,11 @@ Please add linebreaks to the long sentences.
 
 If you add only one linebreak, the paragraph will stay together, but the translation framework will generate two sentences.
 Long sentences are hard to translate and unlikely to be reused.
-Please dont change the line in the middle of a sentence, as that creates bad translation files.
+Please **don't create a new line in the middle of a sentence**, as that creates bad translation strings:
+
+> This sentence is correct.
+> This sentence
+> not.
 
 **Links**
 
