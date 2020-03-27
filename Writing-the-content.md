@@ -30,9 +30,12 @@ Please **don't create a new line in the middle of a sentence**, as that creates 
   * **Always prefer https links when available**, to protect the privacy of our readers.
   * Make sure that the link is the shortest version possible, without suffixes like: `?ftag=COS-05-10aaa0b` or other random stuff. Take everything possible out of the link and leave it to its minimal (as long as functional) expression.
 
+**Naming folders**
+Call the new folders in `/content/*` with a name that means something. Please avoid calling them `tbb-1`. It is preferable to call them as the slug field. This is better for SEO and also while browsing the repo. If you want to change the order of the items you can use the `key` field.
+
 **HTML**
 
-HTML is supported but not totally, and should be avoided. It is better to stick to MarkDown.
+HTML is supported but not totally, and should be avoided. It is better to **stick to MarkDown**.
 
 **TABLES**
 
