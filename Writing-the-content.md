@@ -13,7 +13,9 @@ Long sentences are hard to translate and unlikely to be reused.
 Please **don't create a new line in the middle of a sentence**, as that creates bad translation strings:
 
 > This sentence is correct.
+
 > This sentence
+
 > not.
 
 **Links**
