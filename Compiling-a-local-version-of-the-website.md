@@ -8,9 +8,9 @@ All the lektor-based websites work the same, although they have different reposi
 
 Run the command: `$ curl -sf https://www.getlektor.com/install.sh | sh`
 
-**Troubleshoots**
-*  If you get the error `curl command not found`, then you need to install curl first. You can do this by using the command: `sudo apt install curl`
-* You may get `Error: None of the items in $PATH are writable. Run with sudo or add a $PATH item`. You can fix this by instead running `curl -sf https://www.getlektor.com/install.sh | sudo sh`
+> **Troubleshoots**
+> *  If you get the error `curl command not found`, then you need to install curl first. You can do this by using the command: `sudo apt install curl`
+> * You may get `Error: None of the items in $PATH are writable. Run with sudo or add a $PATH item`. You can fix this by instead running `curl -sf https://www.getlektor.com/install.sh | sudo sh`
 
 ### **2. Clone the repo from torgit** (this is a read only repository)
 Run the command `git clone https://git.torproject.org/project/web/tpo.git`
@@ -22,17 +22,16 @@ $ sudo apt-get install gettext python3-babel
 $ pip install babel
 ```
 ### **4. Clone the translations repository**
-Translations for the website are imported by Jenkins when building the page, but if you want to test them, download the correct branch of the translations repo to the ./i18n/ folder:
+Download the correct branch of the translations repo to the `./i18n/` folder:
 
-```
-# clone the repository to the i18n directory
-$ git clone https://git.torproject.org/translation.git i18n
-# enter the directory
-$ cd i18n
+`$ git clone https://git.torproject.org/translation.git i18n`
+
+### Enter the directory
+`$ cd i18n`
+
 # choose the correct branch for the website.
 # replace tpo-web with the other branches if you are cloning other websites:
 $ git checkout tpo-web
-```
 > For the other websites, the branches are: `tbmanual-contentspot`, `support-portal`, `communitytpo-contentspot` 
 
 ### **5. Initialize the building blocks submodule**
