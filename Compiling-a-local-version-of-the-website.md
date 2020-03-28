@@ -25,8 +25,12 @@ $ pip install babel
 Translations for the website are imported by Jenkins when building the page, but if you want to test them, download the correct branch of the translations repo to the ./i18n/ folder:
 
 ```
+# clone the repository to the i18n directory
 $ git clone https://git.torproject.org/translation.git i18n
+# enter the directory
 $ cd i18n
+# choose the correct branch for the website.
+# replace tpo-web with the other branches if you are cloning other websites:
 $ git checkout tpo-web
 ```
 > For the other websites, the branches are: `tbmanual-contentspot`, `support-portal`, `communitytpo-contentspot` 
