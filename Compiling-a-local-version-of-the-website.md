@@ -42,8 +42,11 @@ The translation mechanism is hooked into the build system. So translating a webs
 
 ### Install the rest of the plugins
 `$ lektor plugins add markdown-header-anchors`
+
 `$ lektor plugins add txt-to-html`
+
 `$ lektor plugins add xml-to-html`
+
 `$ lektor build`
 
 > **Tip**: To save some time while you build in local, you can edit the [configs/i18n.ini](https://gitweb.torproject.org/project/web/tpo.git/tree/configs/i18n.ini) file and take some languages out of the 'translations' option. 
