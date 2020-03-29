@@ -1,8 +1,8 @@
-All the lektor-based websites work the same, although they have different repositories. This howto was written with the main website repository address,  https://git.torproject.org/project/web/tpo.git`, but it can also work for:
+All the lektor-based websites work the same, although they have different repositories. This howto was written for the Tor Project main website repository address,  https://git.torproject.org/project/web/tpo.git`, but it can also work for:
 
-*  Tor Browser Manual:  `https://git.torproject.org/project/web/manual.git`
-*  Support Portal:  `https://git.torproject.org/project/web/support.git`
-*  Community portal:  `https://git.torproject.org/project/web/community.git`
+*  [Tor Browser Manual](https://tb-manual.torproject.org/):  `https://git.torproject.org/project/web/manual.git`
+*  [Support Portal](https://support.torproject.org/):  `https://git.torproject.org/project/web/support.git`
+*  [Community portal](https://community.torproject.org/):  `https://git.torproject.org/project/web/community.git`
 
 ### **1. Download & install Lektor**
 
