@@ -35,20 +35,15 @@ $ git checkout tpo-web
 > For the other websites, the branches are: `tbmanual-contentspot`, `support-portal`, `communitytpo-contentspot` 
 
 ### **5. Initialize the building blocks submodule**
-`$ cd tpo/lego && git submodule update --init`
+`$ cd tpo/lego && git submodule update --init --recursive`
 
-
-### **6. Install and use Lektor i18n plugin**
-`$ lektor plugins add lektor-i18n`
 
 The translation mechanism is hooked into the build system. So translating a website just means building the website.
 
 ### Install the rest of the plugins
-`$ lektor plugins add markdown-header-anchors`
+`$ lektor plugins reinstall
 
-`$ lektor plugins add txt-to-html`
-
-`$ lektor plugins add xml-to-html`
+### Build Lektor
 
 `$ lektor build`
 
@@ -67,7 +62,7 @@ sys.setdefaultencoding('utf8')
 ```
 
 
-### **7. Finally,** 
+### **7. Finally, local server** 
 enter `$ lektor server` to run a local continuous builder.
 You should be able to access your local lektor instance at [http://127.0.0.1:5000/](http://127.0.0.1:5000/) from your computer.
 
